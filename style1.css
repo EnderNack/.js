@@ -66,3 +66,14 @@ body,html{
     text-align:center;
     
 }
+.mid{
+    font-family: tahoma;
+    margin: 0px;
+    color:white;
+    background-color: rgb(56, 56, 56);
+    width:1900px;
+    height:900px;
+}
+#formularz{
+ margin-left:20px;
+}
