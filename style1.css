@@ -1,0 +1,59 @@
+body,html{
+    margin:0px;
+    padding:0px;
+}
+.body{
+    width:1900px;
+    height:1080px;
+}
+.header{
+    height:54px;
+    width:1900px;
+}
+.logo{
+    margin-top:5px;
+    font-size:36px;
+    font-family:Verdana;
+    margin-left:360px;
+    float: left;
+}
+.link1{
+    float:left;
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    margin-top:20px;
+    margin-left:475px;
+}
+.link2{
+    float:left;
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    margin-top:20px;
+    margin-left:35px;
+}
+.link3{
+    float:left;
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    margin-top:20px;
+    margin-left:35px;
+}
+.TEXT1{
+    float:left;
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    margin-top:20px;
+    margin-left:35px;
+}
+.Slider1{
+    width:1900px;
+    height:1080px;
+}
+.SliderZdjecia{
+    width:1900px;
+    height:900px;
+}

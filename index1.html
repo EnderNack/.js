@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>HTML,JS,CSS</title>
+        <meta charset="UTF-8">
+        <!-- Podpięcie styli i skryptów -->
+        <link rel="stylesheet" href="style1.css">
+       
+</head>
+<body>
+        <div class="body">
+            <div class="header">
+                <div class="logo"><i><b>PIOTR PAJĄK</b></i></div>
+                <a href="" class="link1">KALKULATOR</a> <a href="" class="link2">STOPER</a><a href="" class="link3">OBIEKT</a><a class="TEXT1"><B>#SPRAWDZIAN JS</B></a>
+            </div>
+            <div class="midtop">
+                <div class="Slider1">
+                    <img class="SliderZdjecia" src="zdjecia/zdj1.jpg">
+                    <img class="SliderZdjecia" src="zdjecia/zdj2.jpg">
+                    <img class="SliderZdjecia" src="zdjecia/zdj3.jpg">
+                </div>
+            </div>
+            <div class="midbot"></div>
+            <div class="footer"></div>
+
+        <script>
+            var liczba = 0;
+            animacja();
+
+            function animacja() {
+                var i;
+                var x = document.getElementsByClassName("SliderZdjecia");
+                for ( i = 0; i < x.length; i++){
+                    x[i].style.display = "none";
+                }
+                liczba++;
+                if (liczba > x.length){
+                    liczba = 1
+                }
+                x[liczba - 1].style.display = "block";
+                setTimeout(animacja,3000);
+            }
+        </script>
+</body>
+</html>
