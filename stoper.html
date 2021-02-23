@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>HTML,JS,CSS</title>
+        <meta charset="UTF-8">
+        <!-- Podpięcie styli i skryptów -->
+        <link rel="stylesheet" href="style1.css">
+       
+</head>
+<body >
+        <div class="body">
+            <div class="header">
+                <div class="logo"><i><b>PIOTR PAJĄK</b></i></div>
+                <a href="index1.html" class="link1">POWRÓT</a> <a href="index1.html" class="link2">POWRÓT</a><a href="obiekt.html" class="link3">OBIEKT</a><a class="TEXT1"><B>#SPRAWDZIAN JS</B></a>
+            </div>
+            <div class="mid">
+                <div id="stoper">
+                    <button onclick="zacznij_odliczac();">STOPER</button> - po kliknięciu zacznie odliczać od 60 - 0
+                </div>
+            </div>
+        </div>
+            <div class="footer"><i><b>&copy Sprawdzian JS Piotr Pająk 2CTg</b></i></div>
+
+        <script>
+  window.onclick = zacznij_odliczac;
+        var liczba = 60;
+    function zacznij_odliczac()
+        {
+           document.getElementById("stoper").innerHTML = liczba;
+            liczba = liczba-1;
+
+            if(liczba<0) liczba = 60;
+            setTimeout("zacznij_odliczac()",1000);
+        }
+        </script>
+</body>
+</html>
