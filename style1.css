@@ -4,7 +4,7 @@ body,html{
 }
 .body{
     width:1900px;
-    height:1080px;
+    height:1008px;
 }
 .header{
     height:54px;
@@ -51,9 +51,18 @@ body,html{
 }
 .Slider1{
     width:1900px;
-    height:1080px;
+    height:900px;
 }
 .SliderZdjecia{
     width:1900px;
     height:900px;
+}
+.footer{
+    height:54px;
+    width:1900px;
+    margin-top:0px;
+    font-size:36px;
+    font-family:Verdana;
+    text-align:center;
+    
 }
