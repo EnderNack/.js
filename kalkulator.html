@@ -16,27 +16,63 @@
             <div class="mid">
                 <div id="formularz">
               <br> <p><b>Kalkulator</b></p>
-                <form>
-                    Wartość A= : 
-                     <input type="number" name="a"> <br>
-                    Wartość B= :
-                     <input type="number" name="b"> <br>
-                     Wartość C= :
-                     <input type="number" name="c"> <br>
                 
-                    <input type="submit" name="send">
-                    <div id="wynik"></div>
-                </form> 
+                    Wartość A= : 
+                     <td><input type="text" id="liczba1"> <br></td>
+                    Wartość B= :
+                    <td> <input type="text" id="liczba2"> <br></td>
+                     Wartość C= :
+                     <td> <input type="text" id="liczba3"> <br></td>
+                    <td> <input type="submit" value="a^b – c" onclick="dzialanie1();" ></td>
+                    <td> <input type="submit" value="a/b – a*c" onclick="dzialanie2();" ></td>
+                    <td> <input type="submit" value="c/b + b/a" onclick="dzialanie3();" ></td>
+                   <td> <div id="wynik1"></div></td>
+                   <td> <div id="wynik2"></div></td>
+                   <td> <div id="wynik3"></div></td>
+               
             </div>
             </div>
             <div class="footer"><i><b>&copy Sprawdzian JS Piotr Pająk 2CTg</b></i></div>
             
             <script>
-                function kalkulator(){
-                    var a = document.getElementsByName('a').value;
-                    var b = document.getElementsByName('b').value;
-                    var c = document.getElementsByName('c').value;
+                 function dzialanie1() {
+                var liczba1 = parseInt(document.getElementById("liczba1").value);
+                var liczba2 = parseInt(document.getElementById("liczba2").value);
+                var liczba3 = parseInt(document.getElementById("liczba3").value);
+                var wynik1 = "";
+
+                poteg = Math.pow(liczba1,liczba2)
+                wynik1 = poteg - liczba3; 
+                document.getElementById("wynik1").innerHTML ="Wynik dzialania a^b – c =: " + wynik1;  
+            }
+            function dzialanie2(){
+                var liczba1 = parseInt(document.getElementById("liczba1").value);
+                var liczba2 = parseInt(document.getElementById("liczba2").value);
+                var liczba3 = parseInt(document.getElementById("liczba3").value);
+                var wynik2 = "";
+                
+                if (liczba2 == 0) {
+                   alert("B nie może wynosić 0") 
+                }else{
+                    wynik2 = liczba1/liczba2 - liczba1*liczba3; 
                 }
+                document.getElementById("wynik2").innerHTML ="Wynik dzialania a/b – a*c =: " + wynik2;  
+            }
+            function dzialanie3(){
+                var liczba1 = parseInt(document.getElementById("liczba1").value);
+                var liczba2 = parseInt(document.getElementById("liczba2").value);
+                var liczba3 = parseInt(document.getElementById("liczba3").value);
+                var wynik3 = "";
+
+                if(liczba1 == 0){
+                    alert("A nie może wynosić 0")
+                }else if(liczba2 == 0){
+                    alert("B nie może wynosić 0")
+                }else{
+                    wynik3 = liczba3/liczba2 + liczba2/liczba1;
+                }
+                document.getElementById("wynik3").innerHTML ="Wynik dzialania c/b + b/a =: " + wynik3; 
+            }
             </script>
             </body>
             </html>
